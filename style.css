@@ -118,7 +118,7 @@ i {
 section {
 	padding: 100px 0;
 }
-.about,.services,.skills, .teams {
+.about,.services,.skills, .teams, .contact {
 	font-family: 'Poppins', sans-serif;
 }
 section .title {
@@ -157,7 +157,8 @@ section .title::after {
 	content: 'Qui suis-je ?';
 }
 .about .about-content,
-.services .serv-content {
+.services .serv-content,
+.contact .contact-content {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -392,13 +393,33 @@ section .title::after {
 	border: 2px solid crimson!important; 
 	transition: all 0.3s ease;
 }
-.own-dot.active{
+.owl-dot.active{
 	width: 35px;
 	border-radius: 14px;
 }
-.own-dot.active, .own-dot:hover{
+.owl-dot.active, .owl-dot:hover{
 	background: crimson!important;
 }
+
+
+/* contact section */
+.contact .title::after{
+	content: "get in touch";
+}
+.contact .contact-content .column{
+	width:  calc(50% - 30px);
+}
+.contact .contact-content .left .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+	text-align: justify;
+
+}
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
