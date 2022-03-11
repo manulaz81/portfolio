@@ -154,11 +154,11 @@ section .title {
 	font-size: 40px;
 	font-weight: 500;
 	margin-bottom: 60px;
-	padding-bottom: 20 px;
+	padding-bottom: 20px;
 	text-align: center;
 }
 section .title::before {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
@@ -182,6 +182,7 @@ section .title::after {
 
 .about .title::after {
 	content: 'Qui suis-je ?';
+	
 }
 .about .about-content,
 .services .serv-content,
@@ -240,13 +241,14 @@ section .title::after {
 }
 .services .title::before,
 .teams .title::before {
-	background: #fff;
+	background: crimson;
 }
 .services .title::after,
 .teams .title::after
 {
 	background: #111;
 	content: "Ce que j'aime";
+	color: crimson;
 }
 .services .serv-content .card {
 	width: calc(33% - 20px);
@@ -368,7 +370,8 @@ section .title::after {
 
 /* section equipe style */
 .teams .title::after{
-	content: "Qui travaille avec moi";
+	content: "Avec moi";
+
 }
 .teams .carousel .card{
 	background: #222;
