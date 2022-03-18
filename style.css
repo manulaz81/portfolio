@@ -105,8 +105,9 @@ i {
 .home {
 	display: flex;
 	background: url('images/20220227_111827.jpg') no-repeat center;
-	background-size: 1450px;
-	height: 100vh;
+	min-width: 100px;
+	background-size: 1250px;
+	height: 1600px;
 	color: #fff;
 	min-height: 500px;
 	font-family: 'Ubuntu', sans-serif;
@@ -295,6 +296,7 @@ section .title::after {
 }
 .skills .skills-content .column {
 	width: calc(50% - 30px);
+	padding-left: 10px;
 }
 .skills .skills-content .left .text{
 	font-size : 20px;
@@ -404,13 +406,17 @@ section .title::after {
 	margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	object-fit: cover;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	border : 5px solid crimson;
 
 }
+.teams .carousel .card a{
+	color : white;
+}
+
 .teams .carousel .card:hover img {
 	border-color: #fff;
 }
@@ -442,6 +448,7 @@ section .title::after {
 }
 .contact .contact-content .column{
 	width:  calc(50% - 30px);
+	padding-left : 5px;
 }
 .contact .contact-content .left .text{
 	font-size: 20px;
