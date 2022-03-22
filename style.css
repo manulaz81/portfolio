@@ -70,6 +70,7 @@ body{
 .menu-btn {
 	color: #fff;
 	font-size: 23px;
+	font-style: normal;
 	cursor: pointer;
 	display: none;
 }
@@ -146,6 +147,7 @@ i {
 	color: rgb(8, 8, 119);
 	background: none;
 }
+
 
 /* all similar content styling code  */
 section {
@@ -253,7 +255,7 @@ section .title::after {
 .teams .title::after
 {
 	background: #111;
-	content: "Ce que je sais";
+	content: "Ce que je suis ";
 	color: crimson;
 }
 .services .serv-content .card {
@@ -280,6 +282,9 @@ section .title::after {
 	color: crimson;
 	transition: color 0.3s ease;
 }
+.fa-calendar-check:before, .fa-user-tie:before{
+	font-style: normal;
+}
 .services .serv-content .card:hover i {
 	color: #fff;
 }
@@ -292,7 +297,7 @@ section .title::after {
 
 /* kills section styling */
 .skills .title::after{
-	content:"Ce que je suis"
+	content:"Ce que je fais"
 }
 .skills .skills-content .column {
 	width: calc(50% - 30px);
@@ -315,6 +320,7 @@ section .title::after {
 	font-weight: 500;
 	padding: 8px 16px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	border-radius: 6px;
 	border: 2px solid rgb(8, 8, 119);
 	transition: all 0.3s ease;
@@ -444,7 +450,7 @@ section .title::after {
 
 /* contact section */
 .contact .title::after{
-	content: "get in touch";
+	content: "Pourquoi pas !";
 }
 .contact .contact-content .column{
 	width:  calc(50% - 30px);
@@ -578,11 +584,16 @@ footer span a:hover{
 @media (max-width: 947px) {
 	.menu-btn {
 		display: block;
+		font-style: normal;
 		z-index: 999;
 		font-family: FontAwesome;
 	}
+	.fa-bars:before{
+		font-style: normal;
+	}
 	.menu-btn i.active::before {
 		content: '\f00d';
+		font-style: normal;
 	}
 	.navbar .menu {
 		position: fixed;
@@ -667,5 +678,17 @@ footer span a:hover{
 	}
 	.home .home-content .text-3 {
 		font-size: 27px;
+	}
+
+	.home {		
+    background-size: 450px;
+	height : 600px;
+	}
+	.home-content{
+		margin-top: 200px;
+	}
+	.column{
+		padding-right: 3px;
+
 	}
 }
